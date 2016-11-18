@@ -1,0 +1,24 @@
+<div id="myAlert" class="alert alert-success">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    <strong>成功！</strong>结果是成功的。
+</div>
+
+<script>
+$(function(){
+    $("#myAlert").bind('closed.bs.alert', function () {
+        alert("警告消息框被关闭。");
+    });
+});
+</script>
+
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-user"></span> User
+</button>
+<button type="button" class="btn btn-default btn-sm">
+  <span class="glyphicon glyphicon-user"></span> User
+</button>
+<button type="button" class="btn btn-default btn-xs">
+  <span class="glyphicon glyphicon-user"></span> User
+</button>
+
+

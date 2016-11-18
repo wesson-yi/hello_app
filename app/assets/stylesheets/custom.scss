@@ -1,0 +1,24 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 70px;
+}
+.progress {
+  height: 3px;
+}
+html.turbolinks-progress-bar::before {
+  background-color: red !important;
+  height: 5px !important;
+}
+footer {
+  margin-top: 10px;
+  .navbar {
+    border-radius: 0px;
+  }
+}
+.asider {
+  position: fixed;
+  left: 0px;
+  top: 80px;
+}
