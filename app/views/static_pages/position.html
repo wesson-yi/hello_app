@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      HelloApp
+    </title>
+    <meta charset='utf-8'>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="lo8DnmCkPUOs8HSZNIJIRNJnvcOxPKhaT+69Tg+WcNJGXXWsVtO2e9jWf1NM6VuPYGQ/jEX1OjESJkR7x1iYig==" />
+    <link rel="stylesheet" media="all" href="../../assets/stylesheets/static_pages.css"/>
+    <!-- <script src="../../../public/assets/static_pages&#45;877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data&#45;turbolinks&#45;track="reload"></script> -->
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      .div {
+        height: 100px;
+        width: 100px;
+      }
+      .p {
+        border: 1px lightgray solid;
+      }
+      div {
+        border: 1px red solid;
+      }
+      span {
+        border: 1px green solid;
+      }
+      #myDiv {
+        position: relative;
+      }
+      #myDiv .left {
+        position: relative;
+        left: -8px;
+        top: 12px;
+        background: lightgray;
+      }
+      #myDiv .right {
+        position: relative;
+        left: 20px;
+        background: lightgreen;
+      }
+      .fground {
+        position: relative;
+      }
+      .a1 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      .a3 {
+        position: fixed;
+        right: 30px;
+        top: 50px;
+        height: 250px;
+        background: lightyellow;
+        z-index: -999;
+        /* coral; */
+        /* lightblue; */
+        /* khaki; */
+        /* pink: */
+      }
+      #mycanvas {
+        border: 1px blue solid;
+
+      }
+    </style>
+  </head>
+
+  <body onload="drawShape();">
+    <div class="custom-checkbox">
+      <input type="checkbox" id="test"/>
+      <label for="test" onselectstart="return false;" style="-moz-user-select:none;">已阅读并同意相关服务条款</label>
+    </div>
+    <div>
+      <label class="agree-label" onselectstart="return false;" style="-moz-user-select:none;">
+        <i class="cus-checked"></i>
+        已阅读并同意相关服务条款
+      </label>
+    </div>
+    <canvas id="mycanvas"></canvas>
+    <div id="myDiv">
+      <div class="div">
+        this is a div.
+      </div>
+      <p class="p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <div>
+        <span>this is a span.</span><span>hah</span><span>...</span>
+      </div>
+      <div>这是处于</br>正常位置的Nian糕</div>
+      <div class="left">这是相对其正常位置向左移动 20 个像素的Nian糕</div>
+      <div class="right">这是相对其正常位置向</br>右移动 20 个像素的Nian糕</div>
+      <div class= "ground">
+        <div>haha</div>
+        <div id="a">
+          <span class="a1">111111111111111</br>11111111111</br>1111111</br>1111111</span>
+          <span class="a2">22222222222222</br>22222222222</br>22222222</span>
+          <span class="a3">33333333333333333333333333333333333333</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+    </footer>
+    <script type="text/javascript">
+      $(".custom-checkbox label").click(function(){
+        if ($(this).hasClass("right")) {
+          $(this).removeClass("right");
+        }else {
+          $(this).addClass("right")
+        }
+      })
+      function drawShape(){
+        var canvas  = document.getElementById("mycanvas");
+        if (canvas.getContext){
+          var ctx = canvas.getContext('2d');
+          ctx.fillRect(25,25,100,100);
+          ctx.clearRect(50,50,50,50);
+          ctx.strokeRect(52,52,46,46);
+
+          ctx.beginPath();
+          ctx.arc(200,75,50,0,Math.PI*2,true);
+
+          ctx.moveTo(235,75);
+          ctx.arc(200,75,35,0,Math.PI,false);
+
+          ctx.moveTo(190,65);
+          ctx.arc(185,65,5,0,Math.PI*2,true);
+
+          ctx.moveTo(220,65);
+          ctx.arc(215,65,5,0,Math.PI*2,true);
+
+          ctx.stroke();
+
+        }
+        else {
+          alert('You need Safari or Firefox 1.5+ to see this demo.');
+        }
+
+
+      }
+
+
+    </script>
+  </body>
+</html>
+
