@@ -1,0 +1,60 @@
+.custom-checkbox {
+  position: relative;
+  height: 30px;
+}
+.custom-checkbox input {
+  position: absolute;
+  display: none;
+}
+.custom-checkbox label {
+  position: absolute;
+  padding-left: 23px;
+  top: 1px;
+  background: url(../../assets/images/check_box/bg-unchecked.jpg) no-repeat top 5px left 3px;
+}
+.custom-checkbox label.right {
+  background: url(../../assets/images/check_box/bg-checked.png) no-repeat top 3px left 3px;
+}
+
+.agree-label {
+  display: inline-block;
+  /* font-size: 18px; */
+}
+.agree-label i {
+  display: inline-block;
+  width: 18px;
+  margin-bottom: -4px;
+  margin-right: 6px;
+  background: url(../../assets/images/check_box/bg-unchecked.jpg) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

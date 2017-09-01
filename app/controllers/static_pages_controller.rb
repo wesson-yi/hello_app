@@ -1,6 +1,13 @@
 class StaticPagesController < ApplicationController
-  def home
+  p '*' * 99
+  p self.to_s
+  def position
+    @hidden = true
+    p '*' * 99
+    p self.to_s
+  end
 
+  def home
   end
 
   def help
@@ -8,7 +15,7 @@ class StaticPagesController < ApplicationController
 
   def about
   end
-  
+
   def contact
   end
 
