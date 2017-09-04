@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get '/position',    to: 'static_pages#position'
   get '/flex_layout', to: 'static_pages#flex_layout'
 
+  mount Api::V1::Haha => '/api'
 end

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'grape'
+
 gem 'haml'
 gem 'rb-readline'
 gem 'bootstrap-sass'
