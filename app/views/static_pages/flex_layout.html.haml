@@ -1,0 +1,38 @@
+#my-flex
+  .item{style: 'height: 30px; order: 1000; flex-grow: 0; align-self: flex-end'}= 10000
+  .item{style: 'height: 40px; order: 2;'}= 2
+  .item{style: 'height: 50px; order: 3;'}= 3
+  .item{style: 'height: 60px; order: 4;'}= 4
+  .item{style: 'height: 70px; order: 11;'}= 11
+  .item{style: 'height: 80px; order: 22;'}= 22
+  .item{style: 'height: 90px; order: 33;'}= 33
+  .item{style: 'height: 100px; order: 44;'}= 44
+  .item{style: 'height: 110px; order: 111;'}= 111
+  .item{style: 'height: 120px; order: 222;'}= 222
+  .item{style: 'height: 130px; order: 333;'}= 333
+  .item{style: 'height: 140px; order: 444; font-size: 40px;'}= 444
+
+
+
+:css
+  #my-flex {
+    background: #ccc;
+    width: 530px;
+    height: 610px;
+    display: inline-flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row nowrap; */
+
+    justify-content: space-around;
+    align-items: flex-start;
+
+    align-content: flex-start;
+  }
+  .item {
+    display: inline-block;
+    background: green;
+    width: 100px;
+
+  }
