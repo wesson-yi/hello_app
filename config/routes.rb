@@ -4,11 +4,12 @@ Rails.application.routes.draw do
   get 'hello',    to: 'application#hello'
   get 'goodbye',  to: 'application#goodbye'
 
-  get '/home',     to: 'static_pages#home'
-  get '/about',    to: 'static_pages#about'
-  get '/contact',  to: 'static_pages#contact'
-  get '/help',     to: 'static_pages#help'
-  get '/faq',      to: 'static_pages#faq'
-  get '/position', to: 'static_pages#position'
+  get '/home',        to: 'static_pages#home'
+  get '/about',       to: 'static_pages#about'
+  get '/contact',     to: 'static_pages#contact'
+  get '/help',        to: 'static_pages#help'
+  get '/faq',         to: 'static_pages#faq'
+  get '/position',    to: 'static_pages#position'
+  get '/flex_layout', to: 'static_pages#flex_layout'
 
 end

@@ -22,4 +22,8 @@ class StaticPagesController < ApplicationController
   def faq
     @hidden = true
   end
+
+  def flex_layout
+
+  end
 end
