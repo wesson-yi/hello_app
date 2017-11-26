@@ -21,3 +21,12 @@
 .byebug_history
 
 /.rvmrc
+
+# config
+config/secrets.yml
+config/database.yml
+config/mongoid.yml
+config/redis.yml
+config/qiniu.yml
+config/unicorn.rb
+config/monitrc
