@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.org/'
 
 gem 'grape'
 
@@ -34,12 +34,14 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# use PostgreSQL for heroku
+gem 'pg'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   # gem 'sqlite3'
-  gem 'mysql2'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -52,8 +54,6 @@ group :development do
 end
 
 group :production do
-  # use PostgreSQL for heroku
-  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
