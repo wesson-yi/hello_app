@@ -13,4 +13,9 @@ Rails.application.routes.draw do
   get '/flex_layout', to: 'static_pages#flex_layout'
 
   mount Api::V1::Haha => '/api'
+
+  resource :user, only: [:show] do
+    get :write_off
+    get :info
+  end
 end

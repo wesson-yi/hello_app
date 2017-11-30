@@ -1,0 +1,8 @@
+development:
+  weixin_oauth_url: http://oauth.vcooline.com/event_auth_proxy/wx_oauth
+
+test:
+  weixin_oauth_url: http://oauth.vcooline.com/event_auth_proxy/wx_oauth
+
+production:
+  weixin_oauth_url: http://oauth.vcooline.com/event_auth_proxy/wx_oauth

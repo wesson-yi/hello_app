@@ -1,0 +1,23 @@
+.qr-code
+  = true ? (RQRCode::QRCode.new(write_off_user_url, size: 6, level: :h )).as_html.html_safe : image_tag("images-static/qr-code.gif")
+  .qr-url= write_off_user_url
+
+:css
+  table {
+    border-width: 0;
+    border-style: none;
+    border-color: #0000ff;
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+  td {
+    border-left: solid 3px #000;
+    padding: 0;
+    margin: 0;
+    width: 0px;
+    height: 3px;
+  }
+
+  td.black { border-color: #000;  }
+  td.white { border-color: #fff;  }
